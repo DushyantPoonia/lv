@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Love Letter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            text-align: center;
+        }
+        h1 {
+            color: #ff4d4d;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #333;
+        }
+        .btn {
+            background-color: #ff6666;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #ff4d4d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Love Letter</h1>
+        <p id="message">Click the button below to see how much I love you!</p>
+        <button class="btn" onclick="showLove()">Show Love</button>
+    </div>
+
+    <script>
+        function showLove() {
+            const message = document.getElementById('message');
+            message.innerHTML = "My love for you is like a journey: starting at forever and ending at never. ❤️";
+        }
+    </script>
+</body>
+</html>
